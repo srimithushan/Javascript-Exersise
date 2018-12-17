@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+  </head>
+  <body>
+
+    <p id="addnumber"></p>
+    <p id="multinumber"></p>
+    <p id="subtract"></p>
+    <p id="divide"></p>
+
+    <script>
+    // Adding 2 Number ********************************
+    function addNumber(num1, num2){
+      return num1+num2;
+    }
+    document.getElementById("addnumber").innerHTML="The addition of the two numbers is "+ addNumber(10,11 );
+    // multi 2Numbers  ********************************
+    function multiNumber(num1, num2){
+      return num1 * num2;
+    }
+    document.getElementById("multinumber").innerHTML= "The multiplication of the two numbers is "+ multiNumber(7, 3);
+    // subtractNumbers ************************************
+      function subtractNumber(num1, num2){
+        return num1 - num2;
+      }
+      document.getElementById("subtract").innerHTML= "The subtraction of the two numbers is "+subtractNumber(24 , 3);
+      // divideNumbers ****************
+    function divideNum(num1, num2){
+      return num1/num2;
+    }
+    document.getElementById("divide").innerHTML= "The division of the two numbers is "+divideNum(21,3);
+    </script>
+
+  </body>
+</html>
